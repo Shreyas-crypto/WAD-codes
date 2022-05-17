@@ -1,1 +1,89 @@
+<!DOCTYPE html> 
+<html>
+
+<head>
+  <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<title>Multi-page template</title> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+</head> 
+
+	
+<body> 
+
+<!-- Start of first page: #one -->
+<div data-role="page" id="one">
+
+	<div data-role="header">
+		<h1>Multi-page</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" >	
+		<h2>One</h2>
+		
+		<p>There are many galaxies besides ours, though. There are so many, we can’t even count them all yet! The  looked at a small patch of space for 12 days and found 10,000 galaxies, of all sizes, shapes, and colors. Some scientists think there could be as many as  galaxies in the universe.</p>	
+		
+		<p>Some galaxies are spiral-shaped like ours. They have curved arms that make it look like a pinwheel. Other galaxies are smooth and oval shaped. They’re called elliptical galaxies. And there are also galaxies that aren’t spirals or ovals. They have irregular shapes and look like blobs. The light that we see from each of these galaxies comes from the stars inside it.</p>
+		<p>Sometimes galaxies get too close and smash into each other. Our Milky Way galaxy will someday bump into Andromeda, our closest galactic neighbor. But don’t worry. It won’t happen for about five billion years. But even if it happened tomorrow, you might not notice. Galaxies are so big and spread out at the ends that even though galaxies bump into each other, the planets and solar systems often don’t get close to colliding.</p>	
+
+		<h3>Show internal pages:</h3>
+		<p><a href="#two" data-role="button">Fact1</a></p>	
+		<p><a href="#popup" data-role="button" data-rel="dialog" data-transition="pop">Fact 2 as a popup</a></p>
+	</div><!-- /content -->
+	
+	<div data-role="footer" data-theme="d">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div><!-- /page one -->
+
+
+<!-- Start of second page: #two -->
+<div data-role="page" id="two" data-theme="a">
+
+	<div data-role="header">
+		<h1>Two</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">	
+		<h2>Fact 1</h2>
+		<p>You also can’t see the enormous black hole lurking in the center of the Milky Way, though if you’ve ever looked at the constellation Sagittarius, the archer, you’ve looked in the right direction.</p>	
+		
+		<p><a href="#one" data-direction="reverse" data-role="button" data-theme="b">Back to main page</a></p>	
+		
+	</div><!-- /content -->
+	
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div><!-- /page two -->
+
+
+<!-- Start of third page: #popup -->
+<div data-role="page" id="popup">
+
+	<div data-role="header" data-theme="e">
+		<h1>Fact </h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="d">	
+		<h2>fact 2</h2>
+		<p>Two of the closest galaxies to the Milky Way — the Small Magellanic Cloud and the Large Magellanic Cloud — may not have black holes. Or, because both are low-mass galaxies, their central black holes may be too small to detect.</p>		
+		<p><a href="#one" data-rel="back" data-role="button" data-inline="true" data-icon="back">Back to main page</a></p>	
+	</div><!-- /content -->
+	
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div><!-- /page popup -->
+
+</body>
+</html>
+
+
+
+
+
+
 
